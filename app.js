@@ -17,7 +17,7 @@ const PRODUCTOS_DATA = [
         id: 1,
         nombre: "CAMISETA OVERSIZE MÉTRICA FRAGMENT",
         precio: "20",
-        imagenes: ["imagenes/fragmentdelante.png", "imagenes/fragmentdetras.png"], 
+        imagenes: ["imagenes/fragmentdelante.png", "imágenes/fragmentdetras.png"], 
         colores: ["Negro", "Blanco"],
         tallas: ["S", "M", "L", "XL"]
     },
@@ -126,4 +126,5 @@ document.addEventListener('DOMContentLoaded', () => {
     iniciarBuscador();
 
 });
+
 
