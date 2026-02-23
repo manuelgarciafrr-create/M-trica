@@ -17,7 +17,7 @@ const PRODUCTOS_DATA = [
         id: 1,
         nombre: "CAMISETA OVERSIZE MÉTRICA FRAGMENT",
         precio: "20",
-        imagenes: ["imagenes/fragmentdelante.png", "imagenes/fragmentdetras.png"], 
+        imagenes: ["fragmentdelante.png", "fragmentdetras.png"], 
         colores: ["Negro", "Blanco"],
         tallas: ["S", "M", "L", "XL"]
     },
@@ -25,7 +25,7 @@ const PRODUCTOS_DATA = [
         id: 2,
         nombre: "CAMISETA OVERSIZE MÉTRICA AURA VISUAL",
         precio: "20",
-        imagenes: ["imagenes/auradelante.png", "imagenes/auradetras.png"],
+        imagenes: ["auradelante.png", "auradetras.png"],
         colores: ["Negro", "Blanco" ,"Gris"],
         tallas: ["S", "M", "L", "XL"]
     }
