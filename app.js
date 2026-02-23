@@ -25,7 +25,7 @@ const PRODUCTOS_DATA = [
         id: 2,
         nombre: "CAMISETA OVERSIZE MÉTRICA AURA VISUAL",
         precio: "20",
-        imagenes: ["auradelante.png", "auradetras.png"],
+        imagenes: ["feid.jpg", "auradetras.png"],
         colores: ["Negro", "Blanco" ,"Gris"],
         tallas: ["S", "M", "L", "XL"]
     }
