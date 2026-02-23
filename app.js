@@ -17,7 +17,7 @@ const PRODUCTOS_DATA = [
         id: 1,
         nombre: "CAMISETA OVERSIZE MÉTRICA FRAGMENT",
         precio: "20",
-        imagenes: ["imágenes/fragmentdelante.png", "imágenes/fragmentdetras.png"], 
+        imagenes: ["imagenes/fragmentdelante.png", "imagenes/fragmentdetras.png"], 
         colores: ["Negro", "Blanco"],
         tallas: ["S", "M", "L", "XL"]
     },
@@ -25,7 +25,7 @@ const PRODUCTOS_DATA = [
         id: 2,
         nombre: "CAMISETA OVERSIZE MÉTRICA AURA VISUAL",
         precio: "20",
-        imagenes: ["imágenes/feid.jpg", "imágenes/auradetras.png"],
+        imagenes: ["imagenes/auradelante.png", "imagenes/auradetras.png"],
         colores: ["Negro", "Blanco" ,"Gris"],
         tallas: ["S", "M", "L", "XL"]
     }
@@ -124,4 +124,5 @@ function iniciarBuscador() {
 document.addEventListener('DOMContentLoaded', () => {
     renderizar();
     iniciarBuscador();
+
 });
