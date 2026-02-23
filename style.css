@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;800&display=swap');
+
+
+
+:root {
+
+    --fondo: #000000;
+
+    --card-bg: #050505;
+
+    --texto: #ffffff;
+
+    --gris-borde: #1a1a1a;
+
+    --acento: #ffffff;
+
+}
+
+
+
+body {
+
+    background-color: var(--fondo);
+
+    color: var(--texto);
+
+    font-family: 'Montserrat', sans-serif;
+
+    margin: 0;
+
+    padding-bottom: 50px;
+
+}
+
+
+
+/* HEADER Y LOGO */
+
+header {
+
+    padding: 60px 20px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    border-bottom: 1px solid var(--gris-borde);
+
+}
+
+
+
+.logo-top {
+
+    width: 150px;
+
+    height: auto;
+
+    margin-bottom: 10px;
+
+}
+
+
+
+.brand-name {
+
+    font-weight: 300;
+
+    letter-spacing: 12px;
+
+    font-size: 1.4rem;
+
+    text-transform: uppercase;
+
+    margin: 0;
+
+}
+
+
+
+/* GRID DE PRODUCTOS */
+
+.grid-productos {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+    gap: 20px;
+
+    padding: 40px 20px;
+
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+}
+
+
+
+/* CARDS */
+
+.card {
+
+    background-color: var(--card-bg);
+
+    border: 1px solid var(--gris-borde);
+
+    text-align: center;
+
+    padding-bottom: 25px;
+
+    transition: 0.3s ease;
+
+}
+
+.contenedor-deslizable {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Mismo alto que tenías en img */
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-bottom: 0; /* Se elimina el margen para que encaje en el contenedor */
+    display: block;
+}
+
+/* --- LIMPIEZA DE FLECHAS --- */
+.contenedor-deslizable {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    background: #000;
+}
+
+.btn-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.2); /* Fondo casi invisible */
+    color: white;
+    border: none;
+    width: 40px; /* Botón pequeño */
+    height: 50px;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.btn-nav:hover {
+    background: rgba(255, 255, 255, 0.2); /* Brilla un poco al tocarlo */
+}
+
+.flecha-izq { left: 0; border-radius: 0 5px 5px 0; }
+.flecha-der { right: 0; border-radius: 5px 0 0 5px; }
+
+/* Evita que la imagen se vea azul al tocarla en el móvil */
+img {
+    -webkit-user-drag: none;
+    user-select: none;
+}
+
+.card:hover {
+
+    border-color: #444;
+
+}
+
+
+
+.card img {
+
+    width: 100%;
+
+    height: 400px;
+
+    object-fit: cover;
+
+    margin-bottom: 15px;
+
+}
+
+
+
+.card h3 {
+
+    font-weight: 300;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+
+    font-size: 0.9rem;
+
+    margin: 15px 0 5px 0;
+
+}
+
+
+
+.card p {
+
+    font-weight: 800;
+
+    font-size: 1.2rem;
+
+    margin-bottom: 20px;
+
+}
+
+
+
+/* BOTÓN WHATSAPP */
+
+.btn-comprar {
+
+    display: inline-block;
+
+    padding: 12px 30px;
+
+    border: 1px solid white;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 0.7rem;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    transition: 0.3s;
+
+}
+
+
+
+.btn-comprar:hover {
+
+    background-color: white;
+
+    color: black;
+
+}
+
+
+
+/* ADMIN FORM */
+
+form {
+
+    max-width: 400px;
+
+    margin: 40px auto;
+
+    padding: 20px;
+
+    border: 1px solid var(--gris-borde);
+
+}
+
+
+
+input {
+
+    width: 100%;
+
+    background: transparent;
+
+    border: none;
+
+    border-bottom: 1px solid var(--gris-borde);
+
+    color: white;
+
+    padding: 15px 0;
+
+    margin-bottom: 20px;
+
+    font-family: inherit;
+
+}
+
+
+
+input:focus {
+
+    outline: none;
+
+    border-bottom: 1px solid white;
+
+}
+
+
+
+button {
+
+    background: white;
+
+    color: black;
+
+    border: none;
+
+    padding: 15px;
+
+    width: 100%;
+
+    font-weight: 800;
+
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+}
+
+
+
+.btn-borrar {
+
+    background: transparent;
+
+    color: #ff4444;
+
+    border: 1px solid #ff4444;
+
+    margin-top: 10px;
+
+}
+
+
+
+.link-discreto {
+
+    font-size: 10px;
+
+    color: #333;
+
+    text-decoration: none;
+
+    margin-top: 20px;
+
+}
+
+/* SELECTORES DE TALLA Y COLOR */
+
+.selectores {
+
+    display: flex;
+
+    gap: 10px;
+
+    justify-content: center;
+
+    margin-bottom: 15px;
+
+    padding: 0 20px;
+
+}
+
+
+
+select {
+
+    background: black;
+
+    color: white;
+
+    border: 1px solid #333;
+
+    padding: 8px;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 0.7rem;
+
+    text-transform: uppercase;
+
+    flex: 1;
+
+    cursor: pointer;
+
+}
+
+
+
+select:focus {
+
+    border-color: white;
+
+    outline: none;
+
+}
+
+
+
+.btn-comprar {
+
+    width: 80%;
+
+    cursor: pointer;
+
+    background: white;
+
+    color: black;
+
+    border: none;
+
+    padding: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+}
