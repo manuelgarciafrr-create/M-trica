@@ -28,6 +28,14 @@ const PRODUCTOS_DATA = [
         imagenes: ["imagenes/auradelante.png", "imagenes/auradetras.png"],
         colores: ["Negro", "Blanco" ,"Gris"],
         tallas: ["S", "M", "L", "XL"]
+    },
+    {
+        id: 3,
+        nombre: "CAMISETA OVERSIZE MÉTRICA SKATE DREAMS",
+        precio: "20",
+        imagenes: ["imagenes/skatedelante.png", "imagenes/skatedetras.png"],
+        colores: ["Negro"],
+        tallas: ["S", "M", "L", "XL"]
     }
 ];
 
@@ -126,6 +134,7 @@ document.addEventListener('DOMContentLoaded', () => {
     iniciarBuscador();
 
 });
+
 
 
 
