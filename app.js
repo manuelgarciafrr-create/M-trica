@@ -17,7 +17,7 @@ const PRODUCTOS_DATA = [
         id: 1,
         nombre: "CAMISETA OVERSIZE MÉTRICA FRAGMENT",
         precio: "20",
-        imagenes: ["imágenes/fragmentdelante.png", "imágenes/fragmentdetras.png"], 
+        imagenes: ["imagenes/fragmentdelante.png", "imagenes/fragmentdetras.png"], 
         colores: ["Negro", "Blanco"],
         tallas: ["S", "M", "L", "XL"]
     },
