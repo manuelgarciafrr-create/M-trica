@@ -36,6 +36,14 @@ const PRODUCTOS_DATA = [
         imagenes: ["imagenes/skatedelante.png", "imagenes/skatedetras.png"],
         colores: ["Negro"],
         tallas: ["S", "M", "L", "XL"]
+    },
+    {
+        id: 4,
+        nombre: "CAMISETA OVERSIZE MÉTRICA NIGHT RIDE",
+        precio: "20",
+        imagenes: ["imagenes/nightdelante.png", "imagenes/nightdetras.png"],
+        colores: ["Negro"],
+        tallas: ["S", "M", "L", "XL"]
     }
 ];
 
@@ -134,6 +142,7 @@ document.addEventListener('DOMContentLoaded', () => {
     iniciarBuscador();
 
 });
+
 
 
 
